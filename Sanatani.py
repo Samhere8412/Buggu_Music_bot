@@ -458,7 +458,7 @@ async def start_message_private(client, message):
 
         caption = f"""╭───────────────────▣
 <pre>**❍ ʜᴇʏ {mention} •**
-**❍ ɪ ᴀᴍ ᴀᴋᴀɴᴋꜱʜᴀ ᴍᴜꜱɪᴄ  •**</pre>
+**❍ ɪ ᴀᴍ ʙᴜɢɢᴜ ᴍᴜꜱɪᴄ  •**</pre>
 ├───────────────────▣**
 <pre>│**❍ ʙᴇsᴛ ǫᴜɪʟɪᴛʏ ғᴇᴀᴛᴜʀᴇs •**
 │**❍ ᴍᴀᴅᴇ ʙʏ...[ᴋɪɴɢ ᴏꜰ ʜᴇʟʟ](https://t.me/FRIENDS_ZONE_CHATTING_GROUP) •**<pre>
@@ -538,7 +538,7 @@ async def back_to_home_menu(client, query):
     mention = query.from_user.mention
     caption = f"""╭───────────────────▣
 │**❍ ʜᴇʏ {mention} •**
-│**❍ ɪ ᴀᴍ ᴀᴋᴀɴᴋꜱʜᴀ ᴍᴜꜱɪᴄ  •**
+│**❍ ɪ ᴀᴍ ʙᴜɢɢᴜ ᴍᴜꜱɪᴄ  •**
 ├───────────────────▣**
 │**❍ ʙᴇsᴛ ǫᴜɪʟɪᴛʏ ғᴇᴀᴛᴜʀᴇs •**
 │**❍ ᴍᴀᴅᴇ ʙʏ...[ᴋɪɴɢ ᴏꜰ ʜᴇʟʟ](https://t.me/FRIENDS_ZONE_CHATTING_GROUP) •**
@@ -925,7 +925,7 @@ async def change_stream(chat_id):
 
     await call.play(chat_id, stream_media, config=call_config)
     await add_active_media_chat(chat_id, stream_type)
-    caption = f"""```\n🔊<b> ᴀᴋᴀɴᴋꜱʜᴀ ᴍᴜꜱɪᴄ ```\n<b>␥ ʟʏʀɪᴄ •</b> {title}\n<b>␥ ᴛɪᴍᴇ •</b> {duration} ᴍɪɴᴜᴛᴇs\n<b>␥ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ •</b> {requested_by}```\nᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ ˹ ᴀᴋᴀɴᴋꜱʜᴀ ᴍᴜꜱɪᴄ ˼```"""
+    caption = f"""```\n🔊<b> ʙᴜɢɢᴜ ᴍᴜꜱɪᴄ ```\n<b>␥ ʟʏʀɪᴄ •</b> {title}\n<b>␥ ᴛɪᴍᴇ •</b> {duration} ᴍɪɴᴜᴛᴇs\n<b>␥ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ •</b> {requested_by}```\nᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ ˹ ʙᴜɢɢᴜ ᴍᴜꜱɪᴄ ˼```"""
     buttons = InlineKeyboardMarkup(
     inline_keyboard=[
         [
@@ -1247,7 +1247,7 @@ async def stream_audio_or_video(client, message):
                 position = await add_to_queue(
                     chat_id, user, title, duration, stream_file, stream_type, thumbnail
                 )
-                caption = f"""```\n🔊<b> ᴀᴋᴀɴᴋꜱʜᴀ ᴍᴜꜱɪᴄ ```\n<b>␥ ʟʏʀɪᴄ •</b> {title}\n<b>␥ ᴛɪᴍᴇ •</b> {duration} ᴍɪɴᴜᴛᴇs\n<b>␥ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ •</b> {requested_by}```\nᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ ˹ ᴀᴋᴀɴᴋꜱʜᴀ ᴍᴜꜱɪᴄ  ˼```"""
+                caption = f"""```\n🔊<b> ʙᴜɢɢᴜ ᴍᴜꜱɪᴄ ```\n<b>␥ ʟʏʀɪᴄ •</b> {title}\n<b>␥ ᴛɪᴍᴇ •</b> {duration} ᴍɪɴᴜᴛᴇs\n<b>␥ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ •</b> {requested_by}```\nᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ ˹ ʙᴜɢɢᴜ ᴍᴜꜱɪᴄ  ˼```"""
                 await bot.send_photo(chat_id, thumbnail, caption, reply_markup=buttons)
                 await stream_logger(
                     chat_id, user, title, duration, stream_type, thumbnail
@@ -1558,7 +1558,7 @@ async def check_total_stats(client, query):
         video_chats = len(ACTIVE_VIDEO_CHATS)
         
         return await query.answer(
-            f"""🏹 Bᴏᴛ Rᴜɴ Tɪᴍᴇ [◖ Sαηαтαηι ◗]
+            f"""🏹 Bᴏᴛ Rᴜɴ Tɪᴍᴇ [◖ ʙᴜɢɢᴜ ◗]
 ⎋ {uptime}
 
 ➥ Sᴇʀᴠᴇᴅ Cʜᴀᴛs: {served_chats}
