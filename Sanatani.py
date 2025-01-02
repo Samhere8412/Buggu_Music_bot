@@ -527,7 +527,7 @@ async def help(client: Client, message: Message):
              [
                  [
                       InlineKeyboardButton(
-                         "python 3.0", url=f"https://t,me/CaLL_mE_ShiiV")
+                         "python 3.0", url=f"https://t.me/FRIENDS_ZONE_CHATTING_GROUP")
                  ]
             ]
          ),
@@ -1437,11 +1437,11 @@ async def git_repo_link(client, message):
         [
             InlineKeyboardButton(
                 text="˹ sᴜᴘᴘᴏꝛᴛ ˼",
-                url="https://t.me/prishus_support"
+                url="https://t.me/FRIENDS_ZONE_CHATTING_GROUP"
             ),
             InlineKeyboardButton(
                 text="˹ sᴏᴜꝛᴄᴇ ˼",
-                url="https://t.me/prishus_support"
+                url="https://t.me/FRIENDS_ZONE_CHATTING_GROUP"
             ),
         ],
         [
