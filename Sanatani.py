@@ -80,13 +80,13 @@ if os.path.exists("Config.env"):
     load_dotenv("Config.env")
 
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "23342341"))
+API_HASH = getenv("API_HASH", "2f91174adaf93eb596ec0d99511565ce")
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 STRING_SESSION = getenv("STRING_SESSION", "")
-MONGO_DB_URL = getenv("MONGO_DB_URL", None)
-OWNER_ID = int(getenv("OWNER_ID", None))
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
+MONGO_DB_URL = getenv("MONGO_DB_URL", "mongodb+srv://KingOfHell:Highspeedorg@cluster0.ha2cc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+OWNER_ID = int(getenv("OWNER_ID", "8113755379"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002314049781"))
 START_IMAGE_URL = getenv("START_IMAGE_URL", "https://graph.org/file/eb7eab1be60a8547e0157-1f18e3ad25421960c4.jpg")
 REPO_IMAGE_URL = getenv("REPO_IMAGE_URL", "https://graph.org/file/eb7eab1be60a8547e0157-1f18e3ad25421960c4.jpg")
 STATS_IMAGE_URL = getenv("STATS_IMAGE_URL", "https://graph.org/file/eb7eab1be60a8547e0157-1f18e3ad25421960c4.jpg")
