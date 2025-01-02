@@ -80,16 +80,16 @@ if os.path.exists("Config.env"):
     load_dotenv("Config.env")
 
 
-API_ID = int(getenv("API_ID", "23486718"))
-API_HASH = getenv("API_HASH", "bd055b723a3e35b129c9879758f2d73d")
+API_ID = int(getenv("API_ID"))
+API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 STRING_SESSION = getenv("STRING_SESSION", "")
-MONGO_DB_URL = getenv("MONGO_DB_URL", "mongodb+srv://vishalpandeynkp:Bal6Y6FZeQeoAoqV@cluster0.dzgwt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-OWNER_ID = int(getenv("OWNER_ID", "7376832219"))
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001929010431"))
-START_IMAGE_URL = getenv("START_IMAGE_URL", "https://files.catbox.moe/n8rmfh.mp4")
-REPO_IMAGE_URL = getenv("REPO_IMAGE_URL", "https://files.catbox.moe/ywthcz.jpg")
-STATS_IMAGE_URL = getenv("STATS_IMAGE_URL", "https://files.catbox.moe/ywthcz.jpg")
+MONGO_DB_URL = getenv("MONGO_DB_URL", None)
+OWNER_ID = int(getenv("OWNER_ID", None))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
+START_IMAGE_URL = getenv("START_IMAGE_URL", "https://graph.org/file/eb7eab1be60a8547e0157-1f18e3ad25421960c4.jpg")
+REPO_IMAGE_URL = getenv("REPO_IMAGE_URL", "https://graph.org/file/eb7eab1be60a8547e0157-1f18e3ad25421960c4.jpg")
+STATS_IMAGE_URL = getenv("STATS_IMAGE_URL", "https://graph.org/file/eb7eab1be60a8547e0157-1f18e3ad25421960c4.jpg")
 
 
 # Memory Database
@@ -222,8 +222,8 @@ async def main():
         LOGGER.info(f"🚫 Assistant Error: {e}")
         sys.exit()
     try:
-        await app.join_chat("BABY09_WORLD")
-        await app.join_chat("+OL6jdTL7JAJjYzVl")
+        await app.join_chat("FRIENDS_ZONE_CHATTING_GROUP")
+        await app.join_chat("https://t.me/FRIENDS_ZONE_CHATTING_GROUP")
     except Exception:
         pass
     if LOG_GROUP_ID != 0:
@@ -242,7 +242,7 @@ async def main():
     LOGGER.info("✅ PyTgCalls Started.")
     await asyncio.sleep(1)
     LOGGER.info("✅ Successfully Hosted Your Bot !!")
-    LOGGER.info("✅ Now Do Visit: @BABY09_WORLD !!")
+    LOGGER.info("✅ Now Do Visit: @FRIENDS_ZONE_CHATTING_GROUP !!")
     await idle()
 
 # Some Required Functions ...!!
@@ -352,11 +352,11 @@ async def add_served_user(user_id: int):
 CBUTTON = InlineKeyboardMarkup(
     inline_keyboard=[
         [
-            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/prishus_support")
+            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/FRIENDS_ZONE_CHATTING_GROUP")
         ],
         [
-            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/krishu_supports"),
-            InlineKeyboardButton("˹ ᴧʟʟ ʙᴏᴛ ˼", url="https://t.me/prishus_support")
+            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/FRIENDS_ZONE_CHATTING_GROUP"),
+            InlineKeyboardButton("˹ ᴧʟʟ ʙᴏᴛ ˼", url="https://t.me/FRIENDS_ZONE_CHATTING_GROUP")
         ],
         [
             InlineKeyboardButton("↺ ʙᴧᴄᴋ ↻", callback_data="back_to_home")
@@ -380,7 +380,7 @@ ABUTTON = InlineKeyboardMarkup(
 HELP_C = """```
 ⌬ ๏ ʟᴇᴛ's ɪɴᴛʀᴏᴅᴜᴄᴇ ᴍᴜsɪᴄ ʙᴏᴛ```
 
-**⌬ [ᴀᴋᴀɴᴋꜱʜᴀ ᴍᴜꜱɪᴄ ](https://t.me/krishu_supports) ɪs ᴏɴᴇ ᴏғ ᴛʜᴇ ʙᴇsᴛ ᴍᴜsɪᴄ | ᴠɪᴅᴇᴏ sᴛꝛᴇᴀᴍɪɴɢ ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢꝛᴧᴍ ғᴏꝛ ʏᴏᴜꝛ ɢꝛᴏᴜᴘs ᴀɴᴅ ᴄʜᴧɴɴᴇʟ**
+**⌬ [ᴍᴜꜱɪᴄ ʙᴏᴛ ](https://t.me/FRIENDS_ZONE_CHATTING_GROUP) ɪs ᴏɴᴇ ᴏғ ᴛʜᴇ ʙᴇsᴛ ᴍᴜsɪᴄ | ᴠɪᴅᴇᴏ sᴛꝛᴇᴀᴍɪɴɢ ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢꝛᴧᴍ ғᴏꝛ ʏᴏᴜꝛ ɢꝛᴏᴜᴘs ᴀɴᴅ ᴄʜᴧɴɴᴇʟ**
 ```\n⌬ ʙᴇsᴛ ғᴇᴀsɪʙɪʟɪᴛʏ ᴏɴ ᴛᴏᴘ  ?```
 
 **␥ ʙᴇsᴛ sᴏᴜɴᴅ ǫᴜᴀʟɪᴛʏ
@@ -395,10 +395,10 @@ HELP_C = """```
 
 ᴀʟʟ ᴛʜᴇ ғᴇᴀᴛᴜʀᴇs ᴀʀᴇ ᴡᴏʀᴋɪɴɢ ғɪɴᴇ
 
-⌬ ᴍᴏʀᴇ ɪɴғᴏ. [ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ](https://t.me/krishu_supports)**"""
+⌬ ᴍᴏʀᴇ ɪɴғᴏ. [ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ](https://t.me/FRIENDS_ZONE_CHATTING_GROUP)**"""
 
 HELP_X = """```
-    ᴀᴋᴀɴᴋꜱʜᴀ ᴍᴜꜱɪᴄ ᴍᴇɴᴜ```
+    ᴍᴜꜱɪᴄ ​🇧​​🇴​​🇹​ ᴍᴇɴᴜ```
 **ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /**
 ␥ /play - Pʟᴀʏ ʏᴏᴜʀ ғᴀᴠᴏʀɪᴛᴇ sᴏɴɢ [ᴀᴜɪᴅᴏ].
 
@@ -412,7 +412,7 @@ HELP_X = """```
 
 ␥ /end - Cʟᴇᴀʀ , ᴇɴᴅ ᴀʟʟ sᴏɴɢ [ᴀᴜɪᴅᴏ & ᴠɪᴅᴇᴏ]
 
-V ɪ s ɪ ᴛ - [ʜᴇʀᴇ](https://t.me/krishu_supports)"""
+V ɪ s ɪ ᴛ - [ʜᴇʀᴇ](https://t.me/FRIENDS_ZONE_CHATTING_GROUP)"""
 
 # Callback query handler
 @bot.on_callback_query(filters.regex("UTTAM_RATHORE"))
@@ -452,7 +452,7 @@ async def start_message_private(client, message):
             await asyncio.sleep(0.005)  # Adjust speed of progress here
 
         # After progress bar reaches 100%, send final message and delete it
-        await baby.edit_text("**❖ Jᴀʏ sʜʀᴇᴇ ʀᴀᴍ  🚩...**")
+        await baby.edit_text("**❖ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ʏᴏᴜʀ ʙᴏᴛ...**")
         await asyncio.sleep(1)  # Wait for 2 seconds before deletion
         await baby.delete()
 
@@ -461,7 +461,7 @@ async def start_message_private(client, message):
 **❍ ɪ ᴀᴍ ᴀᴋᴀɴᴋꜱʜᴀ ᴍᴜꜱɪᴄ  •**</pre>
 ├───────────────────▣**
 <pre>│**❍ ʙᴇsᴛ ǫᴜɪʟɪᴛʏ ғᴇᴀᴛᴜʀᴇs •**
-│**❍ ᴍᴀᴅᴇ ʙʏ...[sᴡᴇᴇᴛ & sɪᴍᴘʟᴇ ʀᴀᴊ](https://t.me/CaLL_mE_ShiiV) •**<pre>
+│**❍ ᴍᴀᴅᴇ ʙʏ...[ᴋɪɴɢ ᴏꜰ ʜᴇʟʟ](https://t.me/FRIENDS_ZONE_CHATTING_GROUP) •**<pre>
 ╰───────────────────▣"""
 
         buttons = InlineKeyboardMarkup(
@@ -489,7 +489,7 @@ async def start_message_private(client, message):
                     ),
                     InlineKeyboardButton(
                         text="˹ ʀᴇᴘᴏ ˼",
-                        url="https://t.me/prishus_support",  # Callback data for Owner button
+                        url="https://t.me/FRIENDS_ZONE_CHATTING_GROUP",  # Callback data for Owner button
                     ),
                 ]
             ]
@@ -541,7 +541,7 @@ async def back_to_home_menu(client, query):
 │**❍ ɪ ᴀᴍ ᴀᴋᴀɴᴋꜱʜᴀ ᴍᴜꜱɪᴄ  •**
 ├───────────────────▣**
 │**❍ ʙᴇsᴛ ǫᴜɪʟɪᴛʏ ғᴇᴀᴛᴜʀᴇs •**
-│**❍ ᴍᴀᴅᴇ ʙʏ...[sᴡᴇᴇᴛ & sɪᴍᴘʟᴇ ʀᴀᴊ](https://t.me/CaLL_mE_ShiiV) •**
+│**❍ ᴍᴀᴅᴇ ʙʏ...[ᴋɪɴɢ ᴏꜰ ʜᴇʟʟ](https://t.me/FRIENDS_ZONE_CHATTING_GROUP) •**
 ╰───────────────────▣"""
 
     buttons = InlineKeyboardMarkup(
@@ -569,7 +569,7 @@ async def back_to_home_menu(client, query):
                 ),
                 InlineKeyboardButton(
                     text="˹ ʀᴇᴘᴏ ˼",
-                    url="https://t.me/prishus_support",  # Callback data for Owner button
+                    url="https://t.me/FRIENDS_ZONE_CHATTING_GROUP",  # Callback data for Owner button
                 ),
             ]
         ]
@@ -930,10 +930,10 @@ async def change_stream(chat_id):
     inline_keyboard=[
         [
             InlineKeyboardButton(
-                text="˹ ᴜᴘᴅᴀᴛᴇ ˼", url="https://t.me/krishu_supports"
+                text="˹ ᴜᴘᴅᴀᴛᴇ ˼", url="https://t.me/FRIENDS_ZONE_CHATTING_GROUP"
             ),
             InlineKeyboardButton(
-                text="˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/prishus_support"
+                text="˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/FRIENDS_ZONE_CHATTING_GROUP"
             )
         ],
         [
@@ -1031,10 +1031,10 @@ async def stream_audio_or_video(client, message):
     inline_keyboard=[
         [
             InlineKeyboardButton(
-                text="˹ ᴜᴘᴅᴀᴛᴇ ˼", url="https://t.me/krishu_supports"
+                text="˹ ᴜᴘᴅᴀᴛᴇ ˼", url="https://t.me/FRIENDS_ZONE_CHATTING_GROUP"
             ),
             InlineKeyboardButton(
-                text="˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/prishus_support"
+                text="˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/FRIENDS_ZONE_CHATTING_GROUP"
             )
         ],
         [
@@ -1110,10 +1110,10 @@ async def stream_audio_or_video(client, message):
     inline_keyboard=[
         [
             InlineKeyboardButton(
-                text="˹ ᴜᴘᴅᴀᴛᴇ ˼", url="https://t.me/krishu_supports"
+                text="˹ ᴜᴘᴅᴀᴛᴇ ˼", url="https://t.me/FRIENDS_ZONE_CHATTING_GROUP"
             ),
             InlineKeyboardButton(
-                text="˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/prishus_support"
+                text="˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/FRIENDS_ZONE_CHATTING_GROUP"
             )
         ],
         [
@@ -1145,7 +1145,7 @@ async def stream_audio_or_video(client, message):
                 position = await add_to_queue(
                     chat_id, user, title, duration, stream_file, stream_type, thumbnail
                 )
-                caption = f"""```\n🔊 Aᴅᴅᴇᴅ {position} ǫᴜᴇᴜᴇ```\n␥ ʜᴇʏ {requested_by}\n␥ ʏᴏᴜʀ sᴏɴɢ {title}\n␥ ᴘʟᴀʏ ᴀғᴛᴇʀ {position} sᴏɴɢ.```\n⏤͟͟͞͞★ Jᴀʏ sʜʀᴇᴇ ʀᴀᴍ 🚩```"""
+                caption = f"""```\n🔊 Aᴅᴅᴇᴅ {position} ǫᴜᴇᴜᴇ```\n␥ ʜᴇʏ {requested_by}\n␥ ʏᴏᴜʀ sᴏɴɢ {title}\n␥ ᴘʟᴀʏ ᴀғᴛᴇʀ {position} sᴏɴɢ.```\n⏤͟͟͞͞★ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ʏᴏᴜʀ ʙᴏᴛ```"""
                 await bot.send_photo(chat_id, thumbnail, caption, reply_markup=buttons)
                 await stream_logger(
                     chat_id, user, title, duration, stream_type, thumbnail, position
